@@ -1,4 +1,4 @@
-import { Button, Heading, HStack, Icon, Link, Spacer } from "@chakra-ui/react";
+import { Button,  HStack,  Link, Spacer } from "@chakra-ui/react";
 import NavbarIcon from "../Icons/NavbarIcon";
 
 function Navbar() {

@@ -1,9 +1,9 @@
-import { Button,  HStack,  Link, Spacer } from "@chakra-ui/react";
+import { Button, HStack, Link, Spacer } from "@chakra-ui/react";
 import NavbarIcon from "../Icons/NavbarIcon";
 
 function Navbar() {
   return (
-    <HStack fontSize="2vh" px="1em" fontWeight={"normal"}>
+    <HStack fontSize="1em" px="1em" fontWeight={"normal"}>
       <NavbarIcon px="0.5em" href="/#">
         Logo
       </NavbarIcon>

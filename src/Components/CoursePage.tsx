@@ -7,7 +7,8 @@ import {
   HStack,
   Text,
 } from "@chakra-ui/react";
-import SingleCard from "./SingleCard";
+import AllCards from "./Course Cards/Cards";
+import SingleCard from "./Course Cards/SingleCard";
 
 function TwoHeadingsTwoButtons() {
   return (
@@ -39,20 +40,53 @@ function TwoHeadingsTwoButtons() {
           </HStack>
         </Box>
       </Flex>
+      <Heading maxW="1400px" m="0 auto" px="1.75em">
+        Group 1
+      </Heading>
       <Grid
         maxW="1400px"
-        m="0 auto"
         px="3em"
         gridTemplateColumns={[
           "1fr",
+          null,
           "1fr 1fr",
           "1fr 1fr 1fr",
-          "repeat(auto-fill, 1fr)",
+          "repeat(3, 1fr)",
         ]}
       >
-        <SingleCard />
-        <SingleCard />
-        <SingleCard />
+        <AllCards />
+      </Grid>
+      <Heading maxW="1400px" m="0 auto" px="1.75em">
+        Group 2
+      </Heading>
+      <Grid
+        maxW="1400px"
+        px="3em"
+        gridTemplateColumns={[
+          "1fr",
+          null,
+          "1fr 1fr",
+          "1fr 1fr 1fr",
+          "repeat(3, 1fr)",
+        ]}
+      >
+        <AllCards />
+      </Grid>
+      <Heading maxW="1400px" m="0 auto" px="1.75em">
+        Group 3
+      </Heading>
+      <Grid
+        maxW="1400px"
+        px="3em"
+        gridTemplateColumns={[
+          "1fr",
+          null,
+          "1fr 1fr",
+          "1fr 1fr 1fr",
+          "repeat(3, 1fr)",
+        ]}
+      >
+        <AllCards />
       </Grid>
     </Box>
   );

@@ -5,7 +5,6 @@ import {
   Flex,
   Heading,
   Image,
-  ImgProps,
   Spacer,
   Stack,
   Text,
@@ -21,9 +20,10 @@ type CardType = {
   subTitle: string;
   rating: string;
   data: string;
+  type: string;
 };
 
-const SingleCard = ({ cardData }: SingleCardPropsType) => {
+const SingleCardB = ({ cardData }: SingleCardPropsType) => {
   return (
     <>
       {cardData.map((cardDat: any) => {
@@ -69,4 +69,4 @@ const SingleCard = ({ cardData }: SingleCardPropsType) => {
     </>
   );
 };
-export default SingleCard;
+export default SingleCardB;

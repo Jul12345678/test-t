@@ -7,10 +7,11 @@ import {
   HStack,
   Text,
 } from "@chakra-ui/react";
-import AllCards from "./Course Cards/Cards";
-import SingleCard from "./Course Cards/SingleCard";
+import CardA from "./Course Cards/CardA";
+import CardB from "./Course Cards/CardB";
+import CardC from "./Course Cards/CardC";
 
-function TwoHeadingsTwoButtons() {
+const TwoHeadingsTwoButtons = () => {
   return (
     <Box>
       <Flex
@@ -43,6 +44,7 @@ function TwoHeadingsTwoButtons() {
       <Heading maxW="1400px" m="0 auto" px="1.75em">
         Group 1
       </Heading>
+
       <Grid
         maxW="1400px"
         px="3em"
@@ -54,8 +56,9 @@ function TwoHeadingsTwoButtons() {
           "repeat(3, 1fr)",
         ]}
       >
-        <AllCards />
+        <CardA />
       </Grid>
+
       <Heading maxW="1400px" m="0 auto" px="1.75em">
         Group 2
       </Heading>
@@ -70,7 +73,7 @@ function TwoHeadingsTwoButtons() {
           "repeat(3, 1fr)",
         ]}
       >
-        <AllCards />
+        <CardB />
       </Grid>
       <Heading maxW="1400px" m="0 auto" px="1.75em">
         Group 3
@@ -86,9 +89,9 @@ function TwoHeadingsTwoButtons() {
           "repeat(3, 1fr)",
         ]}
       >
-        <AllCards />
+        <CardC />
       </Grid>
     </Box>
   );
-}
+};
 export default TwoHeadingsTwoButtons;

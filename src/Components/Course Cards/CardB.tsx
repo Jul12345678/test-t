@@ -1,5 +1,4 @@
-import SingleCard from "./SingleCard";
-import { useState } from "react";
+import SingleCardB from "./SingleCardB";
 
 type CardType = {
   id: number | number;
@@ -7,57 +6,41 @@ type CardType = {
   subTitle: string;
   rating: string;
   data: string;
+  type: string;
 };
-const AllCards = () => {
-  const [cardData, setCardData] = useState<CardType[]>([
+const CardB = () => {
+  const cardData: CardType[] = [
     {
-      id: 1,
+      id: 4,
       title: "AWS Certified Solutions Architect - Association 2020",
       subTitle: "AWS Certified Solutions Architect - Association 2020",
-      rating: "***** (1)",
+      rating: "***** (4)",
       data: "73 Videos 8:38h Average 7 min",
+      type: "groupB",
     },
     {
-      id: 2,
+      id: 5,
       title: "AWS Certified Solutions Architect - Association 2020",
       subTitle: "AWS Certified Solutions Architect - Association 2020",
-      rating: "***** (2)",
+      rating: "***** (5)",
       data: "73 Videos 8:38h Average 7 min",
+      type: "groupB",
     },
     {
-      id: 3,
+      id: 6,
       title: "AWS Certified Solutions Architect - Association 2020",
       subTitle: "AWS Certified Solutions Architect - Association 2020",
-      rating: "***** (3)",
+      rating: "***** (6)",
       data: "73 Videos 8:38h Average 7 min",
+      type: "groupB",
     },
-    // {
-    //   id: 4,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (4)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    // },
-    // {
-    //   id: 5,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (5)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    // },
-    // {
-    //   id: 6,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (6)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    // },
     // {
     //   id: 7,
     //   title: "AWS Certified Solutions Architect - Association 2020",
     //   subTitle: "AWS Certified Solutions Architect - Association 2020",
     //   rating: "***** (7)",
     //   data: "73 Videos 8:38h Average 7 min",
+    //   type: "groupC",
     // },
     // {
     //   id: 8,
@@ -65,6 +48,7 @@ const AllCards = () => {
     //   subTitle: "AWS Certified Solutions Architect - Association 2020",
     //   rating: "***** (8)",
     //   data: "73 Videos 8:38h Average 7 min",
+    //   type: "groupC",
     // },
     // {
     //   id: 9,
@@ -72,8 +56,41 @@ const AllCards = () => {
     //   subTitle: "AWS Certified Solutions Architect - Association 2020",
     //   rating: "***** (9)",
     //   data: "73 Videos 8:38h Average 7 min",
+    //   type: "groupC",
     // },
-  ]);
-  return <SingleCard cardData={cardData} />;
+  ];
+
+  // const filterGroupA = cardData.filter(function (cardData: {
+  //   id: number;
+  //   title: string;
+  //   subTitle: string;
+  //   rating: string;
+  //   data: string;
+  //   type: string;
+  // }): boolean {
+  //   return cardData.type === "groupA";
+  // });
+  // const filterGroupB = cardData.filter(function (cardData: {
+  //   id: number;
+  //   title: string;
+  //   subTitle: string;
+  //   rating: string;
+  //   data: string;
+  //   type: string;
+  // }): boolean {
+  //   return cardData.type === "groupB";
+  // });
+  // const filterGroupC = cardData.filter(function (cardData: {
+  //   id: number;
+  //   title: string;
+  //   subTitle: string;
+  //   rating: string;
+  //   data: string;
+  //   type: string;
+  // }): boolean {
+  //   return cardData.type === "groupC";
+  // });
+
+  return <SingleCardB cardData={cardData} />;
 };
-export default AllCards;
+export default CardB;

@@ -1,5 +1,4 @@
 import SingleCard from "./SingleCard";
-import SingleCardA from "./SingleCard";
 
 type CardType = {
   id: number | number;

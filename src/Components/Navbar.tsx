@@ -1,5 +1,13 @@
 import { Button, HStack, Link, Spacer } from "@chakra-ui/react";
 import NavbarIcon from "../Icons/NavbarIcon";
+import FilterGroups from "./Filter.tsx/FilterGroups";
+import { useState } from "react";
+
+// if (groupAId?.style.display === "none") {
+//   groupAId.style.display = "grid";
+// } else {
+//   groupAId.style.display = "none";
+// }
 
 function Navbar() {
   return (
@@ -16,9 +24,7 @@ function Navbar() {
       <Link px="0.5em" href="/#">
         Become a Partner
       </Link>
-      <Button px="0.5em" bg="transparent">
-        Filtern nach
-      </Button>
+      <FilterGroups />
       <Spacer />
       <Button bg="transparent">Einloggen</Button>
       <Button borderRadius="100px" h="30px" color="white" bgColor={"red.500"}>

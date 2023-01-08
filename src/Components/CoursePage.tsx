@@ -10,8 +10,10 @@ import {
 import CardA from "./Course Cards/CardA";
 import CardB from "./Course Cards/CardB";
 import CardC from "./Course Cards/CardC";
+import { useState } from "react";
+import Card from "./Course Cards/Card";
 
-const TwoHeadingsTwoButtons = () => {
+function TwoHeadingsTwoButtons() {
   return (
     <Box>
       <Flex
@@ -41,57 +43,10 @@ const TwoHeadingsTwoButtons = () => {
           </HStack>
         </Box>
       </Flex>
-      <Heading maxW="1400px" m="0 auto" px="1.75em">
-        Group 1
-      </Heading>
-
-      <Grid
-        maxW="1400px"
-        px="3em"
-        gridTemplateColumns={[
-          "1fr",
-          null,
-          "1fr 1fr",
-          "1fr 1fr 1fr",
-          "repeat(3, 1fr)",
-        ]}
-      >
-        <CardA />
-      </Grid>
-
-      <Heading maxW="1400px" m="0 auto" px="1.75em">
-        Group 2
-      </Heading>
-      <Grid
-        maxW="1400px"
-        px="3em"
-        gridTemplateColumns={[
-          "1fr",
-          null,
-          "1fr 1fr",
-          "1fr 1fr 1fr",
-          "repeat(3, 1fr)",
-        ]}
-      >
-        <CardB />
-      </Grid>
-      <Heading maxW="1400px" m="0 auto" px="1.75em">
-        Group 3
-      </Heading>
-      <Grid
-        maxW="1400px"
-        px="3em"
-        gridTemplateColumns={[
-          "1fr",
-          null,
-          "1fr 1fr",
-          "1fr 1fr 1fr",
-          "repeat(3, 1fr)",
-        ]}
-      >
-        <CardC />
-      </Grid>
+      <Box>
+        <Card />
+      </Box>
     </Box>
   );
-};
+}
 export default TwoHeadingsTwoButtons;

@@ -1,4 +1,5 @@
-import SingleCardA from "./SingleCardA";
+import SingleCard from "./SingleCard";
+import SingleCardA from "./SingleCard";
 
 type CardType = {
   id: number | number;
@@ -69,6 +70,6 @@ const CardA = () => {
   //   return cardData.type === "groupC";
   // });
 
-  return <SingleCardA cardData={cardData} />;
+  return <SingleCard cardData={cardData} />;
 };
 export default CardA;

@@ -1,4 +1,5 @@
-import SingleCardB from "./SingleCardB";
+import SingleCard from "./SingleCard";
+import SingleCardA from "./SingleCard";
 
 type CardType = {
   id: number | number;
@@ -34,30 +35,6 @@ const CardB = () => {
       data: "73 Videos 8:38h Average 7 min",
       type: "groupB",
     },
-    // {
-    //   id: 7,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (7)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    //   type: "groupC",
-    // },
-    // {
-    //   id: 8,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (8)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    //   type: "groupC",
-    // },
-    // {
-    //   id: 9,
-    //   title: "AWS Certified Solutions Architect - Association 2020",
-    //   subTitle: "AWS Certified Solutions Architect - Association 2020",
-    //   rating: "***** (9)",
-    //   data: "73 Videos 8:38h Average 7 min",
-    //   type: "groupC",
-    // },
   ];
 
   // const filterGroupA = cardData.filter(function (cardData: {
@@ -91,6 +68,6 @@ const CardB = () => {
   //   return cardData.type === "groupC";
   // });
 
-  return <SingleCardB cardData={cardData} />;
+  return <SingleCard cardData={cardData} />;
 };
 export default CardB;

@@ -23,7 +23,7 @@ type CardType = {
   type: string;
 };
 
-const SingleCardB = ({ cardData }: SingleCardPropsType) => {
+const SingleCard = ({ cardData }: SingleCardPropsType) => {
   return (
     <>
       {cardData.map((cardDat: any) => {
@@ -69,4 +69,4 @@ const SingleCardB = ({ cardData }: SingleCardPropsType) => {
     </>
   );
 };
-export default SingleCardB;
+export default SingleCard;

@@ -1,4 +1,7 @@
-import SingleCard from "./SingleCard";
+import { Flex } from "@chakra-ui/react";
+import SingleCardA from "./SingleCardA";
+import SingleCardB from "./SingleCardB";
+import SingleCardC from "./SingleCardC";
 
 type CardType = {
   id: number | number;
@@ -62,6 +65,15 @@ function Card() {
       id: 6,
       title: "AWS Certified Solutions Architect - Association 2020",
       subTitle: "AWS Certified Solutions Architect - Association 2020",
+      rating: "***** (12)",
+      data: "73 Videos 8:38h Average 7 min",
+      type: "groupB",
+      groupTitle: "Group B",
+    },
+    {
+      id: 12,
+      title: "AWS Certified Solutions Architect - Association 2020",
+      subTitle: "AWS Certified Solutions Architect - Association 2020",
       rating: "***** (6)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupB",
@@ -94,8 +106,32 @@ function Card() {
       type: "groupC",
       groupTitle: "Group C",
     },
+    {
+      id: 10,
+      title: "AWS Certified Solutions Architect - Association 2020",
+      subTitle: "AWS Certified Solutions Architect - Association 2020",
+      rating: "***** (10)",
+      data: "73 Videos 8:38h Average 7 min",
+      type: "groupC",
+      groupTitle: "Group C",
+    },
+    {
+      id: 11,
+      title: "AWS Certified Solutions Architect - Association 2020",
+      subTitle: "AWS Certified Solutions Architect - Association 2020",
+      rating: "***** (11)",
+      data: "73 Videos 8:38h Average 7 min",
+      type: "groupC",
+      groupTitle: "Group C",
+    },
   ];
 
-  return <SingleCard cardData={cardData} />;
+  return (
+    <Flex flexDir="column">
+      <SingleCardA cardData={cardData} />;
+      <SingleCardB cardData={cardData} />
+      <SingleCardC cardData={cardData} />
+    </Flex>
+  );
 }
 export default Card;

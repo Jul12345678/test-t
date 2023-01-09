@@ -1,19 +1,19 @@
 import { Box, Button, Flex, Heading, HStack, Text } from "@chakra-ui/react";
-
 import Card from "./Course Cards/Card";
 
-function TwoHeadingsTwoButtons() {
+function CoursePage() {
   return (
     <Box>
       <Flex
         bgImg={"https://picsum.photos/1000/1000"}
         bgSize="cover"
+        bgColor="grey"
         boxSizing="border-box"
         alignItems="center"
         justifyContent="center"
         pos="relative"
       >
-        <Box maxW="1400px" p="4em">
+        <Box maxW="1300px" p="5em">
           <Heading color="white" pt="3em" w="50%">
             React - Moderne UI für das Web entwickeln
           </Heading>
@@ -32,10 +32,10 @@ function TwoHeadingsTwoButtons() {
           </HStack>
         </Box>
       </Flex>
-      <HStack>
+      <HStack maxW="1300px">
         <Card />
       </HStack>
     </Box>
   );
 }
-export default TwoHeadingsTwoButtons;
+export default CoursePage;

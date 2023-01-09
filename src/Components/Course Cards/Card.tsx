@@ -87,7 +87,7 @@ function Card() {
   ];
 
   const grouped = cardData.filter((group) => group.type);
-  console.log("g", grouped);
+
   const filterGroupA = cardData.filter(function (cardData: {
     id: number;
     title: string;

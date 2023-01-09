@@ -27,14 +27,14 @@ type CardType = {
 
 const SingleCard = ({ cardData }: SingleCardPropsType) => {
   const groupByType = cardData.reduce((prds: any, item: any) => {
-    ([prds[item.type]] = [prds[item.type]] || []).push(item);
+    (prds[item.type] = prds[item.type] || []).push(item);
     return prds;
-  }, []);
+  }, {});
   console.log("a", groupByType);
   return (
     <>
       <Box>
-        {groupByType.groupA?.map((cardDat: any) => {
+        {groupByType.groupA.map((cardDat: any) => {
           return (
             <Box>
               <Heading maxW="1400px" m="0 auto" px="1.75em">

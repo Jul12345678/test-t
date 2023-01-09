@@ -7,6 +7,7 @@ type CardType = {
   rating: string;
   data: string;
   type: string;
+  groupTitle: string;
 };
 function Card() {
   const cardData: CardType[] = [
@@ -17,6 +18,7 @@ function Card() {
       rating: "***** (1)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupA",
+      groupTitle: "Group A",
     },
     {
       id: 2,
@@ -26,6 +28,7 @@ function Card() {
       rating: "***** (2)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupA",
+      groupTitle: "Group A",
     },
     {
       id: 3,
@@ -35,6 +38,7 @@ function Card() {
       rating: "***** (3)",
       data: "53 Videos 5:30h Average 6 min",
       type: "groupA",
+      groupTitle: "Group A",
     },
     {
       id: 4,
@@ -43,6 +47,7 @@ function Card() {
       rating: "***** (4)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupB",
+      groupTitle: "Group B",
     },
     {
       id: 5,
@@ -51,6 +56,7 @@ function Card() {
       rating: "***** (5)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupB",
+      groupTitle: "Group B",
     },
     {
       id: 6,
@@ -59,6 +65,7 @@ function Card() {
       rating: "***** (6)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupB",
+      groupTitle: "Group B",
     },
     {
       id: 7,
@@ -67,6 +74,7 @@ function Card() {
       rating: "***** (7)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupC",
+      groupTitle: "Group C",
     },
     {
       id: 8,
@@ -75,6 +83,7 @@ function Card() {
       rating: "***** (8)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupC",
+      groupTitle: "Group C",
     },
     {
       id: 9,
@@ -83,41 +92,9 @@ function Card() {
       rating: "***** (9)",
       data: "73 Videos 8:38h Average 7 min",
       type: "groupC",
+      groupTitle: "Group C",
     },
   ];
-
-  const grouped = cardData.filter((group) => group.type);
-
-  const filterGroupA = cardData.filter(function (cardData: {
-    id: number;
-    title: string;
-    subTitle: string;
-    rating: string;
-    data: string;
-    type: string;
-  }): boolean {
-    return cardData.type === "groupA";
-  });
-  const filterGroupB = cardData.filter(function (cardData: {
-    id: number;
-    title: string;
-    subTitle: string;
-    rating: string;
-    data: string;
-    type: string;
-  }): boolean {
-    return cardData.type === "groupB";
-  });
-  const filterGroupC = cardData.filter(function (cardData: {
-    id: number;
-    title: string;
-    subTitle: string;
-    rating: string;
-    data: string;
-    type: string;
-  }): boolean {
-    return cardData.type === "Group C";
-  });
 
   return <SingleCard cardData={cardData} />;
 }

@@ -1,16 +1,5 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Grid,
-  Heading,
-  HStack,
-  Text,
-} from "@chakra-ui/react";
-import CardA from "./Course Cards/CardA";
-import CardB from "./Course Cards/CardB";
-import CardC from "./Course Cards/CardC";
-import { useState } from "react";
+import { Box, Button, Flex, Heading, HStack, Text } from "@chakra-ui/react";
+
 import Card from "./Course Cards/Card";
 
 function TwoHeadingsTwoButtons() {
@@ -43,9 +32,9 @@ function TwoHeadingsTwoButtons() {
           </HStack>
         </Box>
       </Flex>
-      <Box>
+      <HStack>
         <Card />
-      </Box>
+      </HStack>
     </Box>
   );
 }
